@@ -10,8 +10,8 @@ from tools import (
     parse_job_description,
     compute_match,
     draft_outreach_email,
-    parse_json,                 # existing helper
-    validate_match_output,      # new tools
+    parse_json,              
+    validate_match_output,     
     explain_match,
     suggest_resume_edits,
     generate_targeted_bullets,
@@ -143,7 +143,7 @@ def main():
         additional_authorized_imports=["json"],  # allow json import inside agent code
     )
 
-    # Make sure these filenames match what’s in your folder
+   
     resume_text = load_text("Satya_Bulusu_Resume.txt")
     job_text = load_text("jd.txt")
 
