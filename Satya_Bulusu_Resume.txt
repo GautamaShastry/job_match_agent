@@ -1,0 +1,107 @@
+Gautama Shastry Bulusu Venkata
++1 571-653-0056
+gautamashastry@gmail.com
+LinkedIn: https://linkedin.com/in/satya2603/
+GitHub: https://github.com/GautamaShastry
+LeetCode: https://leetcode.com/u/gautam-2603/
+Portfolio: https://gautamportfolio.com
+
+--------------------------------------------------
+Professional Summary
+--------------------------------------------------
+Master’s candidate in Computer Science (graduating Dec 2025) with hands-on experience delivering secure, scalable microservices, cloud-native deployments, and ML/NLP features—including retrieval-augmented generation (RAG) pipelines using LangChain with FAISS/Qdrant for hybrid retrieval and LLM orchestration—from design through production. Core strengths include Java, Python, JavaScript/TypeScript, Spring Boot, React, Node.js, AWS, Docker, Kubernetes, and CI/CD. Known for reducing latency and defects through systematic profiling, clean interfaces, and strong validation, and for raising reliability/engagement via fault-tolerant releases and data-driven UI improvements. Comfortable working across the stack, documenting standards, and collaborating in Agile teams.
+
+--------------------------------------------------
+Education
+--------------------------------------------------
+George Mason University, Fairfax, VA
+Master’s in Computer Science – 3.85/4
+Jan 2024 – Dec 2025
+
+Coursework: Introduction to Mathematical Foundations of CS, Intro to AI, Systems Programming, Data Mining, Machine Learning, Cryptography, Deep Learning, Analysis of Algorithms, DevOps, Natural Language Processing
+
+Andhra University, Visakhapatnam, Andhra Pradesh, India
+Bachelor’s in Computer Science – 8.15/10
+Aug 2019 – May 2023
+
+--------------------------------------------------
+Technical Skills
+--------------------------------------------------
+Languages: Java, Python, JavaScript/TypeScript, SQL, C/C++, HTML/CSS
+Backend: Spring Boot, FastAPI, Node.js, Express, Django, Flask, REST, Microservices, Distributed Systems, Linux/OS
+Frontend: React, Redux, Vite, Tailwind CSS
+Cloud/DevOps: AWS (EC2, S3, Lambda, RDS, Route 53, CloudFront, IAM, SQS/SNS, CloudWatch), Docker, Kubernetes, Jenkins, Rancher, Git/GitHub
+Databases: PostgreSQL, MySQL, MongoDB, JPA/Hibernate, HikariCP
+AI/ML: LangChain, LangGraph, Retrieval-Augmented Generation (RAG), Vector DBs (FAISS, Qdrant), Hugging Face, TensorFlow, Keras, spaCy, NLP, Agentic AI, LLM fine-tuning, LLMs, OpenAI, Claude
+Tools & Practices: VS Code, IntelliJ, Postman, Maven, Jupyter, Confluence, CI/CD, Agile/Scrum, Version Control (Git)
+Other: Data structures and algorithms, Object-oriented programming, Operating systems, Networking, Parallel processing
+
+--------------------------------------------------
+Experience
+--------------------------------------------------
+Associate Software Engineer
+Backflipt – Hyderabad, India
+Jan 2023 – Dec 2023
+
+- Modularized a monolithic UI into React + Redux feature slices to separate concerns (state, side effects, view), improve component reuse, and de-duplicate logic. Result: +20% user engagement and cleaner code boundaries for faster iteration.
+- Eliminated render bottlenecks by profiling components; introduced React hooks, strategic memoization (React.memo / useMemo / useCallback), and granular component splits to constrain diff scopes. Result: -40% re-render overhead and -10% page load time under typical workloads.
+- Reduced network-induced latency by normalizing Redux entities, adding cache layers for idempotent reads, and debouncing chatty UI triggers; streamlined client–server request patterns. Result: -15% response latency and fewer redundant calls.
+- Standardized UI/UX practices (layout patterns, naming conventions, state ownership) with Confluence documentation and example flows, enabling consistent contributions across squads. Result: -25% new-hire ramp-up time and smoother cross-team handoffs.
+
+--------------------------------------------------
+Projects
+--------------------------------------------------
+Document Assistant | FastAPI, LangChain, FAISS, RAG, Ollama, Hugging Face
+Aug 2025 – Sept 2025
+
+- Built a FastAPI RAG service with endpoints for /upload, /query, /stream-query, and vector-store admin (/stores, /metrics); pipeline: upload → validate → chunk (avg ~555 chars) → embed → FAISS index → answer with citation-enforced prompt + refusals.
+- Delivered k=4 retrieval in 0.038 s avg (0.027–0.059 s range) on the test suite; created a compact store (~0.02 MB, 10 vectors) and 5.57 chunks/sec embedding throughput.
+- Implemented full vector-store lifecycle (create/load/add/delete/list/stats) and supports cached retrievers (similarity/MMR) for repeat queries; exposes store stats (size, file count, embedding dim).
+- Shipped ops & quality gates: health/metrics/store-stats endpoints and an automated test suite with 4/4 passing (100% success, 0 failures) across ingest, index, retrieve, and generate.
+
+Student Survey Application | Spring Boot, Docker, Kubernetes, Jenkins, AWS, Rancher
+Mar 2025 – May 2025
+
+- Designed RESTful APIs in Spring Boot using Spring Data JPA and strict validation annotations (@NotNull, @NotBlank, @Email), preventing bad inputs and ensuring consistent schema adherence from day one.
+- Provisioned Amazon RDS MySQL 8 and tuned HikariCP (maxPool=20, minIdle=5) with appropriate connection/test settings to maintain throughput during concurrent spikes without saturating DB resources.
+- Containerized with OpenJDK 23 and published version-tagged images; deployed a 3-replica Kubernetes workload on EC2 (NodePort) via Rancher to ensure redundancy and predictable rollouts. Achieved 99.9% uptime during pilot.
+- Built a Git-triggered Jenkins pipeline (Maven build → Docker image → K8s health-checked rollout) to automate testing and deployments, enabling zero-downtime releases in under 5 minutes.
+- Hardened correctness with Postman test suites on critical endpoints pre- and post-deployment; 10+ production submissions executed with zero validation/runtime errors.
+
+Taskify – Task Management Web App | Vite + React.js, Express.js, Node.js, MongoDB, Docker
+Jan 2025 – Feb 2025
+
+- Built a full-stack React + Express + MongoDB application with role-based access, guarded routes, and end-to-end CRUD workflows, enabling reliable team task management.
+- Implemented authentication/authorization using JWT and bcrypt password hashing; enforced protected routes and role checks across the SPA to ensure least-privilege access. Outcome: -25% login issues and fewer failed sessions.
+- Accelerated task discovery by shipping real-time search, filtering, and sorting (20+ combinations) and by adding the right MongoDB indexes on hot fields, cutting mean query time and improving perceived responsiveness by ~15%.
+- Stabilized local/dev parity via Docker Compose; formalized REST endpoints (error codes, timeouts, retries) and centralized Redux state to avoid race conditions during concurrent edits. Result: smoother UI updates and fewer desyncs.
+
+Resume Analyzer | React.js, Spring Boot, Python, Flask, PostgreSQL, Render, Vercel, Docker
+Feb 2025 – May 2025
+
+- Built an AI screening workflow with spaCy NER and a custom scoring pipeline; validated against a labeled sample to achieve 87% accuracy while keeping p95 latency < 1.5s per document.
+- Secured data flows using Spring Security (JWT) and JPA; defined typed contracts, timeouts, and retry logic between the Java API and Python microservice to mitigate transient failures. Outcome: zero API errors over 15+ resumes processed.
+- Deployed cost-effectively on Render (backend + AI) and Vercel (frontend) with autoscaling and health checks, maintaining 99.95% uptime for <$50/month without manual ops burden.
+
+Portfolio | React.js, Tailwind CSS, AWS S3, AWS CloudFront, AWS Route 53, AWS ACM
+Jan 2025 – Jul 2025
+
+- Delivered a SPA (Single Page Application) with 90+ Lighthouse scores across performance, accessibility, best practices, and SEO through bundle trimming, lazy loading, and semantic structure.
+- Optimized global delivery by serving static assets from S3 behind CloudFront, tuning cache/TTL and compression, and optimizing images, resulting in 193 ms average TTFB and an A (89%) SpeedVitals grade.
+- Enforced security with ACM-issued HTTPS, HSTS preload, and a CloudFront origin policy to block direct S3 access; passed audits with zero critical Security Hub findings.
+- Maintained 99.95% uptime using Route 53 health checks and CloudFront monitoring; increased user engagement by ~15% via subtle Framer Motion animations (section reveals, transitions, hover effects).
+
+--------------------------------------------------
+Certifications
+--------------------------------------------------
+- AWS Cloud Practitioner (CLF-C02)
+- Deep Learning Specialization (DeepLearning.ai)
+
+--------------------------------------------------
+Publications
+--------------------------------------------------
+- Code-Mixed Telugu-English Hate Speech Detection
+  https://arxiv.org/abs/2502.10632
+
+- How Does A Multilingual LM Handle Multiple Languages?
+  https://arxiv.org/abs/2502.04269

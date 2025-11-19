@@ -1,0 +1,4 @@
+smolagents
+numpy
+openai
+python-dotenv
